@@ -1,0 +1,133 @@
+/* 美德分类 */
+.virtue-categories {
+    margin-bottom: 60px;
+}
+
+.category-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.category-header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.category-icon {
+    font-size: 2rem;
+    margin-right: 20px;
+    color: var(--secondary-color);
+}
+
+.category-title h2 {
+    font-size: 1.5rem;
+}
+
+.category-title p {
+    opacity: 0.8;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.category-content {
+    padding: 30px;
+}
+
+.virtue-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.virtue-item {
+    background-color: var(--light-bg);
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.virtue-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.virtue-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-bottom: 10px;
+}
+
+.virtue-item p {
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+/* 现代诠释 */
+.modern-interpretation {
+    background-color: var(--accent-color);
+    color: white;
+    padding: 60px 0;
+    margin: 60px 0;
+}
+
+.modern-interpretation .container {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.modern-text {
+    flex: 1;
+}
+
+.modern-text h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.modern-text p {
+    margin-bottom: 20px;
+    opacity: 0.9;
+}
+
+.modern-image {
+    flex: 1;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modern-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .modern-interpretation .container {
+        flex-direction: column;
+    }
+
+    .modern-text,
+    .modern-image {
+        width: 100%;
+    }
+
+    .page-header h1 {
+        font-size: 2rem;
+    }
+
+    .page-header p {
+        font-size: 0.9rem;
+    }
+}

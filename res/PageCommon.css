@@ -1,0 +1,42 @@
+/* 面包屑导航 */
+.breadcrumb {
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.breadcrumb a {
+    color: var(--light-text);
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    color: var(--primary-color);
+}
+
+.breadcrumb span {
+    margin: 0 5px;
+    color: var(--light-text);
+}
+
+/* 页面标题 */
+.page-header {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 30px 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('/res/images/photo-1518655048521-f130df041f66.avif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 8px;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.page-header p {
+    color: var(--light-text);
+    max-width: 800px;
+    margin: 0 auto;
+}
